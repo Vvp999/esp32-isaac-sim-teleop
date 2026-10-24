@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="430" viewBox="0 0 980 430" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="980" height="430" rx="12" fill="#ffffff"/>
+
+  <!-- group labels -->
+  <text x="40" y="38" font-size="13" font-weight="bold" fill="#8a5a00">HARDWARE</text>
+  <text x="372" y="38" font-size="13" font-weight="bold" fill="#1d4f91">LAPTOP · ROS 2 JAZZY (Windows, Pixi)</text>
+  <text x="722" y="38" font-size="13" font-weight="bold" fill="#2f6b1f">NVIDIA ISAAC SIM 6.2</text>
+
+  <!-- hardware box -->
+  <rect x="24" y="50" width="300" height="350" rx="10" fill="#fff8ea" stroke="#e0b866"/>
+  <rect x="50" y="78" width="248" height="62" rx="8" fill="#ffffff" stroke="#c9a04a"/>
+  <text x="174" y="104" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">Joystick module</text>
+  <text x="174" y="125" font-size="12" text-anchor="middle" fill="#555">2 × potentiometer + push button</text>
+
+  <rect x="50" y="178" width="248" height="86" rx="8" fill="#ffffff" stroke="#c9a04a"/>
+  <text x="174" y="204" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">ESP32-WROVER</text>
+  <text x="174" y="225" font-size="12" text-anchor="middle" fill="#555">12-bit ADC · auto-calibration</text>
+  <text x="174" y="243" font-size="12" text-anchor="middle" fill="#555">deadband · 50 Hz · mood state machine</text>
+
+  <rect x="50" y="306" width="248" height="62" rx="8" fill="#ffffff" stroke="#c9a04a"/>
+  <text x="174" y="332" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">LCD1602 robot eyes</text>
+  <text x="174" y="353" font-size="12" text-anchor="middle" fill="#555">I²C · custom 5×8 glyphs</text>
+
+  <line x1="174" y1="140" x2="174" y2="176" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="182" y="163" font-size="11" fill="#666">analog GPIO 32/33/13</text>
+  <line x1="174" y1="264" x2="174" y2="304" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="182" y="289" font-size="11" fill="#666">I²C SDA 14 / SCL 15</text>
+
+  <!-- laptop box -->
+  <rect x="356" y="50" width="330" height="350" rx="10" fill="#eef4fc" stroke="#8fb0dc"/>
+  <rect x="382" y="150" width="278" height="86" rx="8" fill="#ffffff" stroke="#6e93c8"/>
+  <text x="521" y="176" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">joystick_bridge.py</text>
+  <text x="521" y="197" font-size="12" text-anchor="middle" fill="#555">rclpy node · serial reader thread</text>
+  <text x="521" y="215" font-size="12" text-anchor="middle" fill="#555">20 Hz publish · 0.5 s safety stop</text>
+
+  <rect x="382" y="296" width="278" height="62" rx="8" fill="#ffffff" stroke="#6e93c8"/>
+  <text x="521" y="322" font-size="15" font-weight="bold" text-anchor="middle" fill="#222">Zenoh router</text>
+  <text x="521" y="343" font-size="12" text-anchor="middle" fill="#555">ROS 2 middleware (rmw_zenoh)</text>
+
+  <line x1="298" y1="210" x2="380" y2="196" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="300" y="186" font-size="11" fill="#666">USB serial</text>
+  <text x="300" y="232" font-size="11" fill="#666" font-family="monospace">J,x,y,btn</text>
+  <line x1="521" y1="236" x2="521" y2="294" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="529" y="262" font-size="11" fill="#666" font-family="monospace">/cmd_vel</text>
+  <text x="529" y="278" font-size="11" fill="#666">geometry_msgs/Twist</text>
+
+  <!-- isaac box -->
+  <rect x="706" y="50" width="250" height="350" rx="10" fill="#eef8ea" stroke="#8cc47a"/>
+  <text x="831" y="76" font-size="12" text-anchor="middle" fill="#2f6b1f">OmniGraph (Action Graph)</text>
+  <rect x="726" y="88" width="210" height="44" rx="7" fill="#fff" stroke="#76b562"/>
+  <text x="831" y="115" font-size="13" text-anchor="middle" fill="#222">ROS2 Subscribe Twist</text>
+  <rect x="726" y="152" width="210" height="44" rx="7" fill="#fff" stroke="#76b562"/>
+  <text x="831" y="179" font-size="13" text-anchor="middle" fill="#222">Break 3-Vector (x, z)</text>
+  <rect x="726" y="216" width="210" height="44" rx="7" fill="#fff" stroke="#76b562"/>
+  <text x="831" y="243" font-size="13" text-anchor="middle" fill="#222">Differential Controller</text>
+  <rect x="726" y="280" width="210" height="44" rx="7" fill="#fff" stroke="#76b562"/>
+  <text x="831" y="307" font-size="13" text-anchor="middle" fill="#222">Articulation Controller</text>
+  <rect x="726" y="344" width="210" height="40" rx="7" fill="#76b900"/>
+  <text x="831" y="369" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">Jetbot wheel joints · PhysX</text>
+  <line x1="831" y1="132" x2="831" y2="150" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="831" y1="196" x2="831" y2="214" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="831" y1="260" x2="831" y2="278" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="831" y1="324" x2="831" y2="342" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+
+  <path d="M660,327 C690,327 690,110 724,110" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+</svg>
